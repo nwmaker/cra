@@ -1,8 +1,8 @@
 import React from 'react';
 
-const RightArrow = (props) => {
+const RightArrow = ({nextSlide}) => {
   return (
-    <div onClick={props.nextSlide} className="nextArrow">
+    <div onClick={nextSlide} className="slider-right-arrow">
       <i className="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
     </div>
   );
