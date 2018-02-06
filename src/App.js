@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Slider from './slider/Slider';
+import Circle from './circle/Circle';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <div className="App-content">
           <Slider />
         </div>
+        <Circle />
       </div>
     );
   }
