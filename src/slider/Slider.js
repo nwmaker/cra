@@ -1,21 +1,34 @@
 import React, { Component } from 'react'
 import Slide from './Slide'
-import RightArrow from './RightArrow'
-import LeftArrow from './LeftArrow'
+import Dots from './Dots'
+
+//import RightArrow from './RightArrow'
+//import LeftArrow from './LeftArrow'
 
 import binary from '../images/binary.png'
 import monarch from '../images/monarch.png'
 import snowflake from '../images/snowflake.png'
+
+import './Slider.css'
+
+const images = [
+  binary,
+  monarch,
+  snowflake
+]
 
 class Slider extends Component {
   constructor(props) {
     super(props);
     this.state = {
       index: 0,
-      total: 3
+      total: images.length
     }
+
+    this.timerID = null;
     this.prevSlide = this.prevSlide.bind(this);
     this.nextSlide = this.nextSlide.bind(this);
+    this.renderSlides = this.renderSlides.bind(this);
   }
   
   prevSlide() {
@@ -37,18 +50,32 @@ class Slider extends Component {
   }
 
   componentDidMount () {
+    this.timerID = setInterval(
+      () => {
+        this.nextSlide()
+      }, 3000
+    )
+  }
+
+  componentWillUnmount () {
+    clearInterval(this.timerID)
+  }
+
+  renderSlides () {
+    return images.map((curr, i) => <Slide key={curr} image={images[i]} />)
   }
 
   render() {
     return (
       <div className="slider">
         <div className="slide-container">
-          { this.state.index === 0 ? <Slide image={binary} /> : null }
-          { this.state.index === 1 ? <Slide image={monarch} /> : null } 
-          { this.state.index === 2 ? <Slide image={snowflake} /> : null }
-          <LeftArrow prevSlide={this.prevSlide} />
-          <RightArrow nextSlide={this.nextSlide} />
+          <Slide key={this.state.index+1} 
+                 image={images[this.state.index]} />         
         </div>
+        <Dots
+          index={this.state.index}
+          total={this.state.total}
+          dotClick={this.handleDotClick} />
       </div>
     )
   }

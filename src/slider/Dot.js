@@ -6,7 +6,8 @@ const Dot = ({ id, active, dotClick }) => {
   return (
     <div data-id={id}
       className={name}
-      onClick={e => dotClick(parseInt(e.target.getAttribute('data-id')))}>
+      onClick={e => dotClick(
+                      parseInt(e.target.getAttribute('data-id'), 10))}>
     </div>
   )
 }

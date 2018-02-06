@@ -7,11 +7,12 @@ import smd from '../images/binary.png'
 import ursaminor from '../images/binary.png'
 import snowflake from '../images/binary.png'
 
-const imagesName = [
-  'binary',
-  'monarch',
-  'smd',
-  'snowflake'
+const images = [
+  binary,
+  monarch,
+  smd,
+  ursaminor,
+  snowflake
 ]
 
 export default class Play extends Component {
