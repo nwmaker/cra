@@ -9,6 +9,7 @@ import binary from '../images/binary.png'
 import monarch from '../images/monarch.png'
 import snowflake from '../images/snowflake.png'
 
+//import './style.scss'
 import './Slider.css'
 
 const images = [
@@ -69,8 +70,7 @@ class Slider extends Component {
     return (
       <div className="slider">
         <div className="slide-container">
-          <Slide key={this.state.index+1} 
-                 image={images[this.state.index]} />         
+          <Slide key={this.state.index+1} image={images[this.state.index]} />
         </div>
         <Dots
           index={this.state.index}
