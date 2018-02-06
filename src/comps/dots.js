@@ -1,5 +1,5 @@
 import React from 'react'
-import Dot from './dot'
+import Dot from './Dot'
 
 const Dots = ({ index, total, dotClick }) => {
 
@@ -20,16 +20,6 @@ const Dots = ({ index, total, dotClick }) => {
   return (
     <div className="dots-container">
       { dots }
-      <style jsx>{`
-        .dot-container {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          text-align: center;
-          z-index: 9999;
-          padding: 5px 0;
-        }
-      `}</style>
     </div>
   )
 }

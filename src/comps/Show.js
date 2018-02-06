@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import Slider from './slider'
 
+import binary from '../images/binary.png'
+import monarch from '../images/binary.png'
+import smd from '../images/binary.png'
+import ursaminor from '../images/binary.png'
+import snowflake from '../images/binary.png'
+
 const imagesName = [
   'binary',
   'monarch',
