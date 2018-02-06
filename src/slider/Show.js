@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import Slider from './slider'
+import Slider from './Slider'
 
 import binary from '../images/binary.png'
 import monarch from '../images/binary.png'
 import smd from '../images/binary.png'
 import ursaminor from '../images/binary.png'
 import snowflake from '../images/binary.png'
+
+import './Slider.css'
 
 const images = [
   binary,
@@ -26,7 +28,7 @@ export default class Play extends Component {
   render() {
     return (
       <div className="play">
-        <Slider images={imagesName} index={this.state.index} />
+        <Slider images={images} index={this.state.index} />
       </div>
     )
   }

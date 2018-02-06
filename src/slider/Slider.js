@@ -10,7 +10,7 @@ import monarch from '../images/monarch.png'
 import snowflake from '../images/snowflake.png'
 
 //import './style.scss'
-import './Slider.css'
+//import './Slider.css'
 
 const images = [
   binary,
