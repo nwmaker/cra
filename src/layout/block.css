@@ -1,0 +1,106 @@
+.block-top {
+  display: block;
+}
+
+.block-width {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.block-width-max {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.one {
+  width: 800px;
+  max-width: 100%;
+}
+
+.two {
+  width: 100%;
+  max-width: 800px;
+}
+
+#parent {
+  background: lightblue;
+  width: 300px;
+  margin: auto;
+}
+
+#child {
+  background: gold;
+  width: 100%;
+  max-width: 150px;
+  max-width: -moz-fit-content;
+  max-width: -webkit-fit-content;
+}
+
+.simple {
+  background: #888;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.fancy {
+  background: #0f1;
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  border-width: 10px;
+}
+
+.simple-box {
+  background: red;
+  width: 500px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.fancy-box {
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  border: solid blue 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.relative1 {
+  position: relative;
+  border: solid red 1px;
+}
+.relative2 {
+  position: relative;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  border: solid blue 1px;
+  width: 500px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: red;
+}
+.relative {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  border: dash green 1px
+}
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  background-color: blue;
+}
+
