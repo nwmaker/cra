@@ -7,7 +7,7 @@ import Slider from './slider/Slider';
 //import Circle from './circle/Show';
 //import SlideBG from './show/SlideBG';
 
-import Block from './layout/block'
+//import Block from './layout/block'
 
 class App extends Component {
   render() {
@@ -19,9 +19,6 @@ class App extends Component {
         </header>
         <div className="App-content">
           <Slider />
-        </div>
-        <div>
-          <Block />
         </div>
       </div>
     );
