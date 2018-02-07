@@ -4,6 +4,7 @@ import './App.css';
 
 import Slider from './slider/Slider';
 //import Circle from './circle/Show';
+import SlideBG from './slider/SlideBG';
 
 class App extends Component {
   render() {
