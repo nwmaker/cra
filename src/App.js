@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Slider from './slider/Slider';
+//import Slider from './slider/Slider';
+import Slider from './show/Slider';
 //import Circle from './circle/Show';
-import SlideBG from './slider/SlideBG';
+//import SlideBG from './show/SlideBG';
 
 class App extends Component {
   render() {
