@@ -2,15 +2,9 @@ import React, { Component } from 'react'
 import Slide from './Slide'
 import Dots from './Dots'
 
-//import RightArrow from './RightArrow'
-//import LeftArrow from './LeftArrow'
-
 import binary from '../images/binary.png'
 import monarch from '../images/monarch.png'
 import snowflake from '../images/snowflake.png'
-
-//import './style.scss'
-//import './Slider.css'
 
 const images = [
   binary,

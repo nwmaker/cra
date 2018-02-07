@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Slider from './slider/Slider';
-import Circle from './circle/Show';
+//import Circle from './circle/Show';
 
 class App extends Component {
   render() {
