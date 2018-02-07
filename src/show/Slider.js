@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import SlideBG from './SlideBG'
 import Dots from './Dots'
 
+/*
 import binary from '../images/binary.png'
 import monarch from '../images/monarch.png'
 import snowflake from '../images/snowflake.png'
@@ -11,6 +12,13 @@ const images = [
   binary,
   monarch,
   snowflake
+]
+*/
+
+const images = [
+  "binary",
+  "monarch",
+  "snowflake"
 ]
 
 class Slider extends Component {
