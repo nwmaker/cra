@@ -6,9 +6,9 @@ import './App.css';
 
 //import Block from './layout/block'
 
-//import Show from './simple-slider/show'
+import Show from './simple-slider/show'
 //import Show from './infinite-slider/show'
-import Show from './infinite-show'
+//import Show from './infinite-show'
 
 class App extends Component {
   render() {
