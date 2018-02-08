@@ -2,11 +2,25 @@ import React, { Component } from 'react'
 import Slide from './slide'
 import Dots from './dots'
 
+import binary from '../images/binary.png'
+import monarch from '../images/monarch.png'
+import snowflake from '../images/snowflake.png'
+import smd from '../images/smd.png'
+import ursaminor from '../images/ursaminor.png'
+
+const images = [
+  binary,
+  monarch,
+  ursaminor,
+  smd,
+  snowflake
+]
+
 const messages = [
+  'Design',
   'Gift',
   'Experience',
   'Kit',
-  'Design',
   'Challenge',
 ]
 
@@ -78,13 +92,14 @@ class Slider extends Component {
   }
 
   renderSlides () {
-    return messages.map((curr, i) => <Slide key={curr} index={i} msg={messages[i]} />)
+    return messages.map((curr, i) => 
+      <Slide key={curr} index={i} msg={messages[i]} image={images[i]} />)
   }
 
   render() {
     return (
-      <div className="slider">
-        <div className="holder"
+      <div className="container">
+        <div className="carousel"
              style={{
                transform: `translateX(${this.state.translateValue}px)`,
                transition: 'transform ease-out 0.45s'

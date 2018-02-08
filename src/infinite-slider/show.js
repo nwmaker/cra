@@ -3,7 +3,7 @@ import Slider from './slider'
 import './show.css'
 
 export default () => (
-  <div className='wrap'>
+  <div className='infinite'>
     <Slider />
   </div>
 )
