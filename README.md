@@ -5,5 +5,7 @@
 npx create-react-app cra
 ```
 
+## simple-carousel
+current React version does not match with React addon transition group.
 
 
